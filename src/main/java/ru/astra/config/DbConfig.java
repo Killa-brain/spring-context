@@ -10,11 +10,6 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DbConfig extends HikariConfig {
-    private final Environment env;
-
-    public DbConfig(Environment env) {
-        this.env = env;
-    }
 
     @Bean
     public DataSource dataSource() {
